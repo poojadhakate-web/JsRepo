@@ -6,7 +6,7 @@ const number = parseInt(prompt("Enter a positive number: "));
 let isPrime = true;
 
 // check if number is equal to 1
-if (number === 1) {
+if (number == 1) {
     console.log("1 is neither prime nor composite number.");
 }
 
@@ -17,7 +17,6 @@ else if (number > 1) {
     for (let i = 2; i < number; i++) {
         if (number % i == 0) {
             isPrime = false;
-            break;
         }
     }
 
